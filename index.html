@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск авиабилетов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Поиск дешевых авиабилетов</h1>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <form id="search-form">
+                <div class="input-group">
+                    <label for="origin-input">Откуда:</label>
+                    <input type="text" id="origin-input" placeholder="Название города" required>
+                </div>
+                <div class="input-group">
+                    <label for="destination-input">Куда:</label>
+                    <input type="text" id="destination-input" placeholder="Название города" required>
+                </div>
+                <div class="input-group">
+                    <label for="departure-date-input">Дата вылета:</label>
+                    <input type="date" id="departure-date-input" required>
+                </div>
+                <button type="submit">Найти билеты</button>
+            </form>
+            <div id="results-info">
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
